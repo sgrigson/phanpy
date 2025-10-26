@@ -26,6 +26,7 @@ const platformFeatures = {
   '@pixelfed/global-feed': containPixelfed,
   '@pleroma/local-visibility-post': containPleroma,
   '@akkoma/local-visibility-post': containAkkoma,
+  '@gotosocial/local-posting': containGTS,
 };
 
 const supportsCache = {};

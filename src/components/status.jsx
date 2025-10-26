@@ -432,6 +432,7 @@ function Status({
     // _filtered,
     // Non-Mastodon
     emojiReactions,
+    localOnly,
   } = status;
 
   const [languageAutoDetected, setLanguageAutoDetected] = useState(null);
@@ -2304,6 +2305,13 @@ function Status({
             <>
               <div class="status-direct-badge">
                 <Trans>Private mention</Trans>
+              </div>{' '}
+            </>
+          )}
+          {localOnly && (
+            <>
+              <div class="status-direct-badge">
+                <Trans>Local</Trans>
               </div>{' '}
             </>
           )}
